@@ -8,12 +8,14 @@ namespace premierProjet.Library
 {
     public class Player
     {
-        public string name; // 
+        #region 
+        public string name;
         public Deck deck;
         public byte score;
-        public object hand;
+        public Array hand { get; set; }
+        #endregion
 
-        public Player(string name, Deck deck, byte score, object hand) // constructor
+        public Player(string name, Deck deck, byte score, Array hand) // constructor
         {
             this.name = name;
             this.deck = deck;
@@ -23,23 +25,38 @@ namespace premierProjet.Library
 
         public string Name { get { return name; } }
 
-        public Deck Deck { 
+        public Deck Deck {
             get { return deck; }
             set { deck = value; }
         }
 
-        public byte Score { 
+        public byte Score {
             get { return score; }
             set
             {
                 this.score = value;
-            }}
+            } }
 
-        public object Hand { 
+        public Array Hand {
             get { return hand; }
-            set { hand = value; }
         }
 
+        public Array RemoveCardFromHand(int value)
+        {
+            // enleve de hand la carte qui a la valeur VALUE :
+            // on crée un tableau temporaire
+            // on parcours le talbeau Hand et si la valeur i N'EST PAS égale à value alors on ajoute la value au tableau temporaire
+            // remplace hand par le tableau temporaire       
+                int[] tempArray = Array.Empty<int>();
+                for (int i = 0; i < hand.Length; i++)
+                {
+                    if (Hand.GetValue(i) != value)
+                    {
+                        tempArray[i] = (int)hand.GetValue(i);
+                    }
+                }
+                this.hand = tempArray;
+        }
     }
 
     public class Deck
