@@ -48,11 +48,6 @@ Player computer = new Player("Ordinateur", computerDeck, 0, computerHand);
 Console.WriteLine(" ");
 Console.WriteLine(" ");
 Console.WriteLine(" ");
-//Console.WriteLine(" Votre deck est composé des cartes : ");
-//for (int i = 0; i < player.deck.CurrentDeck.Length; i++)
-//{
-//    Console.WriteLine(player.deck.CurrentDeck.GetValue(i));
-//}
 
 int cardA = (int)player.hand.GetValue(0);
 int cardB = (int)player.hand.GetValue(1);

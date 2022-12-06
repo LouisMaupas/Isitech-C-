@@ -50,12 +50,13 @@ namespace premierProjet.Library
                 int[] tempArray = Array.Empty<int>();
                 for (int i = 0; i < hand.Length; i++)
                 {
-                    if (Hand.GetValue(i) != value)
+                    if ((int)Hand.GetValue(i) != value)
                     {
                         tempArray[i] = (int)hand.GetValue(i);
                     }
                 }
                 this.hand = tempArray;
+            return this.hand;
         }
     }
 
