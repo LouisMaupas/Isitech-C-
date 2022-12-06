@@ -1,0 +1,15 @@
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\bin\Debug\net6.0\premierProjet.exe
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\bin\Debug\net6.0\premierProjet.deps.json
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\bin\Debug\net6.0\premierProjet.runtimeconfig.json
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\bin\Debug\net6.0\premierProjet.dll
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\bin\Debug\net6.0\premierProjet.pdb
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\obj\Debug\net6.0\premierProjet.csproj.AssemblyReference.cache
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\obj\Debug\net6.0\premierProjet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\obj\Debug\net6.0\premierProjet.AssemblyInfoInputs.cache
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\obj\Debug\net6.0\premierProjet.AssemblyInfo.cs
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\obj\Debug\net6.0\premierProjet.csproj.CoreCompileInputs.cache
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\obj\Debug\net6.0\premierProjet.dll
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\obj\Debug\net6.0\refint\premierProjet.dll
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\obj\Debug\net6.0\premierProjet.pdb
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\obj\Debug\net6.0\premierProjet.genruntimeconfig.cache
+C:\Users\louis\OneDrive\Documents\Isitech\C#\Projet 1\premierProjet\premierProjet\obj\Debug\net6.0\ref\premierProjet.dll
