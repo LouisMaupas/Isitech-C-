@@ -21,7 +21,6 @@ Deck computerDeck = new Deck(Cards);
  Retourne ces 3 cartes
  */
 Array drawCards(int numberOfCards, Deck deck) {
-    // FIXME on peut tirer 2x la même carte + (version 2) utiliser le deck
     var random = new Random();
     int[] Draw = new int[numberOfCards];
     for (int i = 0; i < numberOfCards; i++)
@@ -35,8 +34,8 @@ Array drawCards(int numberOfCards, Deck deck) {
 Array playerDraw = drawCards(3, playerDeck); // tire 3 cartes pour le player
 Array computerDraw = drawCards(3, computerDeck); // tire 3 cartes pour le computer
 // ajoute ces 3 cartes aux mains
-Array playerHand = drawCards(3, computerDeck);
-Array computerHand = drawCards(1, computerDeck);
+int[] playerHand = (int[])drawCards(3, computerDeck);
+int[] computerHand = (int[])drawCards(1, computerDeck);
 // TODO (version 2) retire les 3 cartes piochés des decks de player et computer
 
 
@@ -75,7 +74,7 @@ while (player.Hand.Length > 0)
     }
 
     // retire la carte playerChoice qui vient d'être joué de la main de player
-    player.RemoveCardFromHand(playerChoice);
+    player.RemoveCardFromHand(possibleCards[playerChoice]);
     // Tire une carte pour le pc
     int computerCard = (int)drawCards(1, computerDeck).GetValue(0);
     Console.WriteLine("Le pc a joué la carte : " + computerCard);
@@ -110,13 +109,13 @@ while (player.Hand.Length > 0)
         Console.WriteLine("Vos cartes sont : ");
         Console.WriteLine("La carte 0 a une valeur de " + cardA);
         Console.WriteLine("La carte 1 a une valeur de " + cardB);
-        Console.WriteLine("Vous devez écrire 1 ou 2");
+        Console.WriteLine("Vous devez écrire 0 ou 1");
         playerChoice = Int32.Parse(Console.ReadLine());
     }
     // retire la carte playerChoice qui vient d'être joué de la main de player
-    player.RemoveCardFromHand(playerChoice);
+    player.RemoveCardFromHand(possibleCards[playerChoice]);
     computerCard = (int)drawCards(1, computerDeck).GetValue(0);
-    Console.WriteLine("Le pc a joué la carte : " + computerCard);
+    Console.WriteLine("Le pc a joué une carte ayant pour valeur " + computerCard);
     // On calcul qui gagne la bataille et incremente le score du joueur qui a gagné
     if (possibleCards[playerChoice] > computerCard)
     {
@@ -139,7 +138,7 @@ while (player.Hand.Length > 0)
     Console.WriteLine("C'est le dernier tour ! ");
     Console.WriteLine(" Vous jouez votre dernière carte : " + cardA);
     computerCard = (int)drawCards(1, computerDeck).GetValue(0);
-    Console.WriteLine("Le pc a joué la carte : " + computerCard);
+    Console.WriteLine("Le pc a joué une carte ayant pour valeur " + computerCard);
     // On calcul qui gagne la bataille et incremente le score du joueur qui a gagné
     if (possibleCards[playerChoice] > computerCard)
     {
