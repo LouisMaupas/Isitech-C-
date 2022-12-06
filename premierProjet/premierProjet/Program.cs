@@ -164,5 +164,9 @@ while (player.Hand.Length > 0)
     Console.WriteLine("Les scores  sont : ");
     Console.WriteLine(player.name + " vous avez un score de : " + player.score);
     Console.WriteLine("Le pc a un score de " + computer.score);
+
+    Console.WriteLine(" *********************** La partie est terminée ! ***********************");
+    Console.ReadLine();
+    Environment.Exit(0);
 }
 
